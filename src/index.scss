@@ -1,0 +1,298 @@
+@import './styles/variables';
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+      url('../public/fonts/Gilroy-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
+      url('../public/fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+      url('../public/fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Medium'), local('Gilroy-Medium'),
+      url('../public/fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+      url('../public/fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Gilroy',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  background-color: $color-bg;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.app__block {
+  display: flex;
+  justify-content: space-between;
+  width: 1040px;
+  margin-top: 92px;
+}
+
+
+// decorators with absolute position
+.ellipse1 {
+  width: 399.01px;
+  height: 400.31px;
+  position: absolute;
+  opacity: 0.5;
+  transform: rotate(-9.41deg);
+  top: -70px;
+  left: -31.33px;
+  z-index: 0;
+}
+
+.ellipse2 {
+  width: 790.65px;
+  height: 793.23px;
+  position: absolute;
+  opacity: 0.8;
+  transform: rotate(-9.41deg);
+  top: -316px;
+  left: 1068.67px;
+  z-index: 0;
+}
+
+.ellipse3 {
+  display: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.javascript {
+  width: 61.89px;
+  height: 72.94px;
+  position: absolute;
+  top: 404.2px;
+  right: 36.3px
+}
+
+.html {
+  position: absolute;
+  width: 88.28px;
+  height: 88.28px;
+  top: 241.81px;
+  right: 36.14px;
+}
+
+.sublime {
+  position: absolute;
+  width: 53.93px;
+  height: 53.93px;
+  top: 498.06px;
+  right: 152.88px;
+}
+
+.css {
+  position: absolute;
+  width: 60.4px;
+  height: 85.45px;
+  top: 364.22px;
+  right: 133.52px;
+}
+
+.vsc {
+  position: absolute;
+  width: 60.62px;
+  height: 60.62px;
+  top: 568.29px;
+  right: 65.95px;
+}
+
+.ellipse4 {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  top: 260.45px;
+  right: 30px;
+  background-color: #F16529;
+}
+
+.ellipse5 {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  top: 338.45px;
+  right: 144px;
+  background-color: #2965F1;
+}
+
+.ellipse6 {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  top: 424.45px;
+  right: 22px;
+  background-color: #F0BE25;
+}
+
+.ellipse7 {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  top: 471px;
+  right: 155px;
+  background-color: #FF9800;
+}
+
+.ellipse8 {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  top: 608px;
+  right: 56px;
+  background-color: #48AEF3;
+}
+
+.hide {
+  display: none;
+}
+
+// React international phone styles
+
+.phone {
+  height: 51px;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  font-family: 'Gilroy';
+  color: $color-grey;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24;
+}
+
+.phone::placeholder {
+  color: $color-grey;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24;
+  font-family: 'Gilroy';
+}
+
+.phone:active, .phone:focus {
+  outline: none;
+}
+
+.country {
+  padding-left: 22px;
+
+  button {
+    background: none;
+    border: none;
+  }
+
+  button:hover {
+    background: none;
+    border: none;
+
+  }
+}
+
+
+// Media query
+@media(min-width: 1840px) {
+  .ellipse2 {
+    left: 70%;
+  }
+}
+
+@media(min-width: 1440px) {
+.hide {
+  display: block;
+}
+
+}
+
+@media(max-width: 1040px) {
+  .app__block {
+    width: 100%;
+  }
+}
+
+@media(max-width:900px) {
+  .app__block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@media(max-width: 750px) {
+  .ellipse3 {
+    display: block;
+    width: 912px;
+    height: 912px;
+    position: absolute;
+    top: 410px;
+    left: -151px;
+    z-index: 0;
+  }
+}
+
+@media(max-width: 500px) {
+  .phone {
+    height: 46px;
+    font-size: 12px;
+    line-height: 21.51px;
+  }
+  
+  .phone::placeholder {
+    font-size: 12px;
+    line-height: 21.51px;
+    
+  }
+}
+

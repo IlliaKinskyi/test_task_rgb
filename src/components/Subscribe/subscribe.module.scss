@@ -1,0 +1,141 @@
+@import '../../styles/variables';
+
+.subscribe {
+    background-color: $color-bg2;
+    width: 366px;
+    border-radius: 10px;
+    padding: 50px 58px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 1;
+
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25.99px;
+        color: $color-white;
+
+        &_red {
+            color: $color-red;
+        }
+    }
+
+    &__input {
+        background-color: $color-dark-blue;
+        border: none;
+        border-radius: 5px;
+        width: 248px;
+        height: 51px;
+        margin-bottom: 14px;
+        font-family: 'Gilroy';
+        color: $color-grey;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24;
+        padding-left: 22px;
+        box-sizing: border-box;
+        opacity: 1;
+
+        &_phone {
+            background-color: $color-dark-blue;
+            height: 51px;
+            border-radius: 5px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__input::placeholder {
+        color: $color-grey;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24;
+        font-family: 'Gilroy';
+    }
+
+    &__input:first-child {
+        margin-top: 20px;
+    }
+
+    &__input:active, &__input:focus {
+        outline: none;
+    }
+
+    &__submit {
+        width: 248px;
+        height: 51px;
+        border-radius: 5px;
+        background-color: $color-red;
+        font-family: 'Gilroy';
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+        color: $color-white;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    &__privacy {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17.88px;
+        color: $color-white;
+        opacity: 0.5;
+    }
+}
+
+
+@media(max-width: 1100px) {
+    .subscribe {
+        margin-right: 30px;
+    }
+}
+
+@media(max-width: 900px) {
+    .subscribe {
+        margin-right: 0px;
+    }
+}
+
+@media(max-width: 500px) {
+    .subscribe {
+        width: 328px;
+        padding: 41px 21px;
+
+        &__title {
+            font-size: 20px;
+            line-height: 23.29px;
+        }
+
+        &__input {
+            width: 286px;
+            height: 46px;
+            font-size: 12px;
+            line-height: 21.51px;
+
+        &_phone {
+            height: 46px;
+        }
+        }
+
+        &__input::placeholder {
+            font-size: 12px;
+            line-height: 21.51px;
+        }
+
+        &__input:first-child {
+            margin-top: 18px;
+        }
+
+        &__submit {
+            width: 222.25px;
+            height: 45.55px;
+            border-radius: 4.48px;
+            background-color: #0048FF;
+            font-size: 14px;
+            line-height: 21.51px;
+            margin-bottom: 18.45px;
+        }
+    }
+}
